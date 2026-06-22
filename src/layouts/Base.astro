@@ -1,0 +1,78 @@
+﻿---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description || 'AI工具评测与SaaS产品对比 - 帮你找到最佳工具'} />
+    <title>{title} | Fidu Tools</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        --primary: #6366f1;
+        --primary-dark: #4f46e5;
+        --bg: #ffffff;
+        --bg-alt: #f8fafc;
+        --text: #1e293b;
+        --text-muted: #64748b;
+        --border: #e2e8f0;
+        --radius: 12px;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+      }
+      nav {
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      nav a { text-decoration: none; color: var(--text); font-weight: 600; font-size: 1.25rem; }
+      nav .links { display: flex; gap: 1.5rem; }
+      nav .links a { font-weight: 400; font-size: 0.95rem; color: var(--text-muted); }
+      nav .links a:hover { color: var(--primary); }
+      main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+      .footer {
+        text-align: center;
+        padding: 2rem;
+        color: var(--text-muted);
+        font-size: 0.875rem;
+        border-top: 1px solid var(--border);
+        margin-top: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Fidu Tools</a>
+      <div class="links">
+        <a href="/">首页</a>
+        <a href="/category/ai-tools">AI工具</a>
+        <a href="/category/productivity">效率工具</a>
+        <a href="/category/dev-tools">开发工具</a>
+      </div>
+    </nav>
+    <main>
+      <slot />
+    </main>
+    <div class="footer">
+      <p>&copy; 2026 Fidu Tools - 专业AI工具评测与SaaS产品对比</p>
+      <p style="margin-top:0.5rem">部分链接为推广链接，我们会从符合条件的购买中获取佣金</p>
+    </div>
+  </body>
+</html>
