@@ -1,0 +1,68 @@
+﻿---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Fidu Tools - AI工具评测与SaaS产品对比平台">
+  <section style="text-align:center;padding:4rem 0 3rem">
+    <h1 style="font-size:2.5rem;font-weight:800;margin-bottom:1rem">
+      找到最适合你的<span style="color:var(--primary)">AI工具</span>
+    </h1>
+    <p style="font-size:1.1rem;color:var(--text-muted);max-width:600px;margin:0 auto 2rem">
+      专业评测、深度对比、真实使用体验 — 帮你从海量AI工具中找到最具性价比的选择
+    </p>
+    <a href="/category/ai-tools" style="display:inline-block;background:var(--primary);color:#fff;padding:0.85rem 2rem;border-radius:var(--radius);text-decoration:none;font-weight:600">浏览AI工具评测</a>
+  </section>
+
+  <section style="padding:2rem 0">
+    <h2 style="font-size:1.5rem;margin-bottom:1.5rem">热门评测</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem">
+      <article style="border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:box-shadow 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'" onmouseout="this.style.boxShadow='none'">
+        <a href="/article/chatgpt-vs-claude" style="text-decoration:none;color:inherit">
+          <span style="display:inline-block;background:#eef2ff;color:var(--primary);padding:0.25rem 0.75rem;border-radius:999px;font-size:0.8rem;margin-bottom:0.75rem">AI对话工具</span>
+          <h3 style="font-size:1.15rem;margin-bottom:0.5rem">ChatGPT vs Claude：2026年全方位对比评测</h3>
+          <p style="font-size:0.9rem;color:var(--text-muted)">深度对比两款主流AI助手的写作、编程、推理能力及定价方案</p>
+        </a>
+      </article>
+      <article style="border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:box-shadow 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'" onmouseout="this.style.boxShadow='none'">
+        <a href="/article/midjourney-vs-dalle" style="text-decoration:none;color:inherit">
+          <span style="display:inline-block;background:#eef2ff;color:var(--primary);padding:0.25rem 0.75rem;border-radius:999px;font-size:0.8rem;margin-bottom:0.75rem">AI图像生成</span>
+          <h3 style="font-size:1.15rem;margin-bottom:0.5rem">Midjourney vs DALL·E 4：AI绘画工具谁更强</h3>
+          <p style="font-size:0.9rem;color:var(--text-muted)">对比图像质量、控制精度、价格和使用体验</p>
+        </a>
+      </article>
+      <article style="border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:box-shadow 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'" onmouseout="this.style.boxShadow='none'">
+        <a href="/article/notion-vs-obsidian" style="text-decoration:none;color:inherit">
+          <span style="display:inline-block;background:#eef2ff;color:var(--primary);padding:0.25rem 0.75rem;border-radius:999px;font-size:0.8rem;margin-bottom:0.75rem">效率工具</span>
+          <h3 style="font-size:1.15rem;margin-bottom:0.5rem">Notion vs Obsidian：2026知识管理工具选择指南</h3>
+          <p style="font-size:0.9rem;color:var(--text-muted)">从笔记体验、插件生态、协作功能全方位对比</p>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <section style="padding:2rem 0;background:var(--bg-alt);border-radius:var(--radius);margin:2rem 0;text-align:center">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">推荐工具</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;padding:1rem">
+      <div style="background:var(--bg);padding:1.25rem;border-radius:var(--radius);border:1px solid var(--border)">
+        <h4 style="margin-bottom:0.5rem">ChatGPT Plus</h4>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem">月费 ，GPT-5 最强模型</p>
+        <a href="#" style="font-size:0.85rem;color:var(--primary);text-decoration:none">查看评测 →</a>
+      </div>
+      <div style="background:var(--bg);padding:1.25rem;border-radius:var(--radius);border:1px solid var(--border)">
+        <h4 style="margin-bottom:0.5rem">Claude Pro</h4>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem">月费 ，长文本之王</p>
+        <a href="#" style="font-size:0.85rem;color:var(--primary);text-decoration:none">查看评测 →</a>
+      </div>
+      <div style="background:var(--bg);padding:1.25rem;border-radius:var(--radius);border:1px solid var(--border)">
+        <h4 style="margin-bottom:0.5rem">Notion AI</h4>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem">AI辅助，一体化工作空间</p>
+        <a href="#" style="font-size:0.85rem;color:var(--primary);text-decoration:none">查看评测 →</a>
+      </div>
+      <div style="background:var(--bg);padding:1.25rem;border-radius:var(--radius);border:1px solid var(--border)">
+        <h4 style="margin-bottom:0.5rem">Canva Pro</h4>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem">AI驱动，一键设计</p>
+        <a href="#" style="font-size:0.85rem;color:var(--primary);text-decoration:none">查看评测 →</a>
+      </div>
+    </div>
+  </section>
+</Base>
